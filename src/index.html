@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Philip Bardy">
+  <meta name="description" content="The popular game 2048 as a PWA">
+  <title>2048</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="stylesheet" type="text/css" href="public/css/main.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/fonts.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/pages.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/media.css" />
+  <link rel="stylesheet" type="text/css" href="public/css/animation.css" />
+  <script type="module" src="public/js/app.js" defer></script>
+  <script type="text/javascript" src="public/js/main.js"></script>
+</head>
+<body>
+
+  <div id="cookie-notice"></div>
+
+  <div class="app">
+    <div class="page" id="page0">
+      <div class="content center">
+        <div class="vbox main">
+          <div class="hbox score-container">
+            <div class="title">2048</div>
+            <div class="hbox">
+              <div class="vbox score center">
+                <div>Score</div>
+                <div id="score">0000</div>
+              </div>
+              <div class="vbox score center">
+                <div>Best</div>
+                <div id="best-score">0000</div>
+              </div>
+            </div>
+          </div>
+          <div class="hbox info-container">
+            <div class="hbox">Join the numbers and get to the 2048 tile!</div>
+            <div class="button center" id="new-game">New Game</div>
+            <div class="button center" id="button-install">Install</div>
+          </div>
+          <div class="hbox">
+            <div class="game-container" id="board">
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+              <div class="cell"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="page" id="page1">
+      <div class="content center">
+        <div class="vbox center">
+          <div class="hbox center">
+            <h2>Game Over</h2>
+          </div>
+          <div class="hbox center">
+            <a href="#page0">
+              <div class="button center">
+                <span>Try Again</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

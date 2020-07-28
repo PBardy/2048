@@ -1,0 +1,25 @@
+@media screen and (max-width:600px) {
+  #page0 .title {
+    font-size: 40px;
+    flex: 0;
+    margin-right: 15px;
+  }
+  #page0 .main {
+    width:calc(100% - 10px);
+  }
+  #page0 .score {
+    font-size: 85%;
+  }
+  #page0 .info-container>div:first-child {
+    display: none;
+  }
+  #page0 .game-container {
+    width: 350px;
+    height: 350px;
+    grid-gap: 8px;
+    border: 8px solid #bbada0;
+  }
+  #page0 .block {
+    font-size: 200%;
+  }
+}
