@@ -29,3 +29,11 @@ Features to add:
 Future features:
 
 * A global leaderboard for highscores
+
+## Screenshots
+
+<img src="screenshots/project-2048-1.jpg?raw=true" width="256" />
+<img src="screenshots/project-2048-2.jpg?raw=true" width="256" />
+<img src="screenshots/project-2048-3.jpg?raw=true" width="256" />
+<img src="screenshots/project-2048-4.jpg?raw=true" width="256" />
+
