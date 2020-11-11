@@ -1,9 +1,47 @@
 {
   "name": "2048",
   "short_name": "2048",
-  "start_url": ".",
+  "lang": "en-GB",
+  "start_url": "/src/index.html",
   "display": "standalone",
-  "background_color": "#fff",
-  "description": "2048 PWA",
-  "icons": []
+  "theme_color": "#ffffff",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "./public/img/icons/logo512.png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "./public/img/icons/logo384.png",
+      "sizes": "384x384"
+    },
+    {
+      "src": "./public/img/icons/logo152.png",
+      "sizes": "152x152"
+    },
+    {
+      "src": "./public/img/icons/logo144.png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "./public/img/icons/logo128.png",
+      "sizes": "128x128"
+    },
+    {
+      "src": "./public/img/icons/logo96.png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "./public/img/icons/logo72.png",
+      "sizes": "72x72"
+    },
+    {
+      "src": "./public/img/icons/logo120.png",
+      "sizes": "120x120"
+    },
+    {
+      "src": "./public/img/icons/logo180.png",
+      "sizes": "120x120"
+    }
+  ]
 }

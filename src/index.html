@@ -5,15 +5,47 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Philip Bardy">
   <meta name="description" content="The popular game 2048 as a PWA">
+  <meta name="theme-color" content="#ffffff">
   <title>2048</title>
   <link rel="manifest" href="manifest.json">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="application-name" content="2048">
+  <meta name="apple-mobile-web-app-title" content="2048">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="msapplication-navbutton-color" content="#ffffff">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="msapplication-starturl" content="/src">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  
+  <link rel="icon" sizes="512x512" href="./public/img/icons/logo512.png">
+  <link rel="apple-touch-icon" sizes="512x512" href="./public/img/icons/logo512.png">
+  <link rel="icon" sizes="384x384" href="./public/img/icons/logo384.png">
+  <link rel="apple-touch-icon" sizes="384x384" href="./public/img/icons/logo384.png">
+  <link rel="icon" sizes="152x152" href="./public/img/icons/logo152.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="./public/img/icons/logo152.png">
+  <link rel="icon" sizes="144x144" href="./public/img/icons/logo144.png">
+  <link rel="apple-touch-icon" sizes="144x144" href="./public/img/icons/logo144.png">
+  <link rel="icon" sizes="128x128" href="./public/img/icons/logo128.png">
+  <link rel="apple-touch-icon" sizes="128x128" href="./public/img/icons/logo128.png">
+  <link rel="icon" sizes="96x96" href="./public/img/icons/logo96.png">
+  <link rel="apple-touch-icon" sizes="96x96" href="./public/img/icons/logo96.png">
+  <link rel="icon" sizes="72x72" href="./public/img/icons/logo72.png">
+  <link rel="apple-touch-icon" sizes="72x72" href="./public/img/icons/logo72.png">
+  <link rel="icon" sizes="120x120" href="./public/img/icons/logo120.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./public/img/icons/logo120.png">
+  <link rel="icon" sizes="120x120" href="./public/img/icons/logo180.png">
+  <link rel="apple-touch-icon" sizes="120x120" href="./public/img/icons/logo180.png">
+
   <link rel="stylesheet" type="text/css" href="public/css/main.css" />
   <link rel="stylesheet" type="text/css" href="public/css/fonts.css" />
   <link rel="stylesheet" type="text/css" href="public/css/pages.css" />
   <link rel="stylesheet" type="text/css" href="public/css/media.css" />
   <link rel="stylesheet" type="text/css" href="public/css/animation.css" />
-  <script type="module" src="public/js/app.js" defer></script>
-  <script type="text/javascript" src="public/js/main.js"></script>
+
+  <script type="module" src="./public/js/app.js" defer></script>
+  <script src="./public/js/main.js"></script>
 </head>
 <body>
 
@@ -39,7 +71,7 @@
           <div class="hbox info-container">
             <div class="hbox">Join the numbers and get to the 2048 tile!</div>
             <div class="button center" id="new-game">New Game</div>
-            <div class="button center" id="button-install">Install</div>
+            <div class="button center" id="installbutton">Install</div>
           </div>
           <div class="hbox">
             <div class="game-container" id="board">

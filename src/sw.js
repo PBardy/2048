@@ -1,3 +1,4 @@
+// Open up the cache to store file for offline use.
 const CACHE_NAME = 'new-cache';
 
 const urlsToCache = [
@@ -13,16 +14,18 @@ const urlsToCache = [
   './public/js/util.js',
 ];
 
+// Once the install event is fired cache resources
 self.addEventListener('install', function(event) {
   event.waitUntil(
     caches.open(CACHE_NAME)
       .then(function(cache) {
-        console.log('Opened cache');
         return cache.addAll(urlsToCache);
       })
   );
 });
 
+// Match fetch requests with cached resources to avoid
+// the need for network usage (incase the user is offline).
 self.addEventListener('fetch', function(event) {
   event.respondWith(
     caches.match(event.request)
@@ -35,6 +38,9 @@ self.addEventListener('fetch', function(event) {
 });
 
 
+// Remove old caches so we always use new resources
+// when we have access to the network (this allows for updates
+// without needing to unregister the service worker).
 self.addEventListener('activate', function(event) {
 
   const cacheWhitelist = [CACHE_NAME];
