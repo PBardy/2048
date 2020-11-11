@@ -17,7 +17,15 @@ The objectives of the game are to ensure that the grid is never completely fille
 
 ## Installation
 
-Download and run the application through a localhost webserver or check out the hosted version at: <a href="https://pbardy.000webhostapp.com/projects/2048/src/">https://pbardy.000webhostapp.com/projects/2048/src/</a>
+To download the source code I recommend:
+
+```bash
+git clone https://github.com/PBardy/2048
+```
+
+Then run a local webserver to server the index.html file. This can be done easily with the Visual Studio Code live server extension. In order for the application to function as a PWA on localhost the URL must be 'http://127.0.0.1:5500/src/index.html'.
+
+There is also a hosted version found at: <a href="https://pbardy.000webhostapp.com/projects/2048/src/">https://pbardy.000webhostapp.com/projects/2048/src/</a>
 
 ## Roadmap
 
